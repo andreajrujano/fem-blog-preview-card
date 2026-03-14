@@ -37,8 +37,8 @@ Users should be able to:
 
 ### What I learned
 
-- Use of semantic HTML tags for the content of the card.
+- Use of semantic HTML tags for content of the card.
 
 ### Continued development
 
-Image optimization and responsive images. 
+Images optimization and responsive images. 

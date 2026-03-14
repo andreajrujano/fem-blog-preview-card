@@ -1,0 +1,144 @@
+:root {
+    /* Colors */
+    --yellow-color: #f4d04e;
+    --gray-950-color: #111;
+    --gray-500-color: #6b6b6b;
+    --white-color: #fff;
+
+    /* Spacing scale */
+    --spacing-50: 4px;
+    --spacing-100: 8px;
+    --spacing-150: 12px;
+    --spacing-200: 24px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--yellow-color);
+    font-family: "Figtree", sans-serif;
+    font-size: 15px; /* Paragraph size */
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.text-preset-1 {
+  font-family: "Figtree", sans-serif;
+  font-size: 24px;
+  font-weight: 800; /* Extra Bold*/
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.text-preset-2 {
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  font-weight: 500; /* Medium */
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  font-weight: 500; /* Medium */
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.text-preset-3-bold {
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  font-weight: 800; /* Extra Bold */
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.color-gray-500{
+    color: var(--gray-500-color)
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.card {
+    color: var(--gray-950-color);
+    width: 384px;
+    background-color: var(--white-color);
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px 2px var(--gray-950-color); /* offset-x | offset-y | blur-radius | spread-radius | color */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: solid 1px var(--gray-950-color);
+}
+
+.card-image {
+    border-radius: 10px;
+    overflow: hidden; /* to clip image corners */
+    height: 200px;
+    line-height: 0;   /* removes extra line box space */
+}
+
+.card-image img {
+    display: block;
+    margin: 0;
+    max-width: 100%;   /* shrink to fit container width */
+    height: 100%;        /* fill container height */
+    object-fit: cover;  /* maintain aspect ratio, crop if necessary */
+}
+
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+
+.card-category {
+    background-color: var(--yellow-color);
+    padding: 4px 12px;
+    border-radius: 4px;
+    align-self: flex-start;
+
+}
+
+.card-author {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 0px;
+}
+
+.card-author img {
+    width:32px;
+    height: 32px;
+ 
+}
+
+
+/* Media query for mobile screens */
+@media (max-width: 375px) {
+    .card {
+        width: 327px;
+    }
+}
+
